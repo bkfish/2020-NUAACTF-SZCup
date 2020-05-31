@@ -1,0 +1,1 @@
+encrypt是flag用medium加密来的，尝试逆向它吧

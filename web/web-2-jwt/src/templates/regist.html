@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html lang="zh-han">
+<head>
+    <title>注册</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action='/regist'>
+        <label>用户名：<input type="text" name="username" value=""></label></br>
+        <label>密码：<input type="password" name="password1" value=""></label></br>
+        <label>重复密码：<input type="password" name="password2" value=""></label></br>
+        <label>邮箱：<input type="email" name="email" value=""></label></br>
+        <input type="submit" value="注册">
+    </form>
+    <a href="{{ url_for('login') }}">已经注册前往登录</a></p>
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+</body>
+</html>

